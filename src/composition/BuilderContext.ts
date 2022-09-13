@@ -1,12 +1,24 @@
+/**
+ * Represents a constructor for an object which can provide extra context during
+ * a CloudFormation template build.
+ */
 export interface ContextConstructor<T> {
   ContextKey: string;
   new (): T;
 }
 
+/**
+ * Represents a collection of objects which can provide extra context during a
+ * CloudFormation template build.
+ */
 export interface BuilderContext {
   get<T>(ctor: ContextConstructor<T>): T;
 }
 
+/**
+ * Represents a collection of objects which can provide extra context during a
+ * CloudFormation template build.
+ */
 export class BuilderContextProvider implements BuilderContext {
   private readonly ctx = new Map<string, any>();
 

@@ -4,6 +4,8 @@ import { TemplateFragment } from './TemplateFragment.js';
 
 /**
  * Attributes related to a condition in a CloudFormation template.
+ *
+ * @see {@link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html | Conditions}
  */
 export interface ConditionAttributes {
   name: string;

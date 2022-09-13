@@ -4,6 +4,8 @@ import { TemplateFragment } from './TemplateFragment.js';
 
 /**
  * Attributes related to a rule in a CloudFormation template.
+ *
+ * @see {@link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/rules-section-structure.html | Rules}
  */
 export interface RuleAttributes {
   name: string;

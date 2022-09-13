@@ -5,6 +5,8 @@ import { TemplateFragment } from './TemplateFragment.js';
 
 /**
  * Attributes related to a mapping in a CloudFormation template.
+ *
+ * @see {@link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html | Mappings}
  */
 export interface MappingAttributes {
   name: string;

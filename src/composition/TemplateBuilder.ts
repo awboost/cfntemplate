@@ -9,7 +9,7 @@ export interface TemplateBuilderFn {
 }
 
 /**
- * Am object which can build one or more resources in a template.
+ * An object which can build one or more resources in a template.
  */
 export interface TemplateBuilder {
   build: TemplateBuilderFn;

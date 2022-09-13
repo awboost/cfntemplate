@@ -4,6 +4,8 @@ import { TemplateFragment } from './TemplateFragment.js';
 
 /**
  * Attributes related to a metadata entry in a CloudFormation template.
+ *
+ * @see {@link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html | Metadata}
  */
 export interface MetadataAttributes {
   name: string;

@@ -5,6 +5,8 @@ import { TemplateFragment } from './TemplateFragment.js';
 
 /**
  * Attributes related to a parameter in a CloudFormation template.
+ *
+ * @see {@link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html | Parameters}
  */
 export interface ParameterAttributes {
   name: string;

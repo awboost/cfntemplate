@@ -4,6 +4,8 @@ import { TemplateFragment } from './TemplateFragment.js';
 
 /**
  * Attributes related to an output in a CloudFormation template.
+ *
+ * @see {@link https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html | Outputs}
  */
 export interface OutputAttributes {
   name: string;
