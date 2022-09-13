@@ -2,7 +2,7 @@ import {
   AttributeTypeFor,
   ResourceAttributes,
   ResourceType,
-} from '@cfnboost/resources';
+} from '@awboost/cfntypes';
 import { makeResourceAttributes } from './makeResourceAttributes.js';
 
 /**

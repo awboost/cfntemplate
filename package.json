@@ -1,8 +1,8 @@
 {
-  "name": "@cfnboost/template",
+  "name": "@awboost/cfntemplate",
   "version": "0.1.0",
   "type": "module",
-  "repository": "https://github.com/cfnboost/template",
+  "repository": "https://github.com/awboost/cfntemplate",
   "author": "Gordon Leigh <gordonmleigh@gmail.com>",
   "license": "MIT",
   "private": false,
@@ -51,6 +51,6 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
-    "@cfnboost/resources": "^0.37.3"
+    "@awboost/cfntypes": "^0.44.1"
   }
 }
