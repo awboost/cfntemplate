@@ -43,6 +43,6 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
-    "@awboost/cfntypes": "^0.44.1"
+    "@awboost/cfntypes": "^0.100.8"
   }
 }
