@@ -9,11 +9,11 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "./lib/cjs/index.js",
-  "module": "./lib/index.js",
-  "types": "lib/index.d.ts",
   "exports": {
-    ".": "./lib/index.js"
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    }
   },
   "files": [
     "lib/**/*.js",
@@ -24,10 +24,9 @@
     "!src/**/*.test.ts"
   ],
   "scripts": {
-    "build": "npm run clean && npm run compile && npm run compile:cjs && npm run lint",
+    "build": "npm run clean && npm run compile && npm run lint",
     "clean": "rm -rf docs/ lib/ *.tsbuildinfo",
     "compile": "npm run index && tsc",
-    "compile:cjs": "tsc -p tsconfig.cjs.json",
     "index": "node makeIndex.js src/",
     "lint": "eslint src/ --ext=ts",
     "watch:compile": "tsc -w"
