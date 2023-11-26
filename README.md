@@ -2,10 +2,6 @@
 
 This package contains type definitions for AWS CloudFormation templates, so that you can create CloudFormation templates in code.
 
-## Documentation
-
-See [documentation](https://awboost.github.io/cfntemplate/).
-
 ## Example
 
 ```typescript

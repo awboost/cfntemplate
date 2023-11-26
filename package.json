@@ -24,17 +24,13 @@
     "!src/**/*.test.ts"
   ],
   "scripts": {
-    "build": "npm run clean && npm run compile && npm run compile:cjs && npm run lint && npm run docs",
+    "build": "npm run clean && npm run compile && npm run compile:cjs && npm run lint",
     "clean": "rm -rf docs/ lib/ *.tsbuildinfo",
     "compile": "npm run index && tsc",
     "compile:cjs": "tsc -p tsconfig.cjs.json",
-    "dev:docs": "concurrently --kill-others npm:watch:docs npm:serve:docs",
-    "docs": "typedoc",
     "index": "node makeIndex.js src/",
     "lint": "eslint src/ --ext=ts",
-    "serve:docs": "http-server docs/ -o",
-    "watch:compile": "tsc -w",
-    "watch:docs": "onchange src/**/*.ts -i -d 1000 -- npm run docs"
+    "watch:compile": "tsc -w"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.11.0",
@@ -44,10 +40,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-prettier": "^4.0.0",
-    "http-server": "^0.12.3",
-    "onchange": "^7.0.2",
     "prettier": "^2.1.2",
-    "typedoc": "^0.22.11",
     "typescript": "^4.5.5"
   },
   "dependencies": {
