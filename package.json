@@ -1,6 +1,6 @@
 {
   "name": "@awboost/cfntemplate",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "type": "module",
   "repository": "https://github.com/awboost/cfntemplate",
   "author": "Gordon Leigh <gordonmleigh@gmail.com>",
